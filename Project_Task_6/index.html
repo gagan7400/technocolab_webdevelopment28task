@@ -5,10 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelvin Weather</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<script src="script.js"></script>
+    <div class="box">
+        <h1> Kelvin to fahrenheit </h1>
+        <section>
+            <div>
+                <label for="Kelvin">Kelvin</label>
+                <input type="number" placeholder="please provide Kelvin" id="kelvin"> <br>
+            </div>
+            <div>
+                <label for="fahrenheit">fahrenheit</label>
+                <input type="number" placeholder="please provide fahrenheit" id="fahrenheit"> <br>
+            </div>
+        </section>
+        <button type="button" onclick="convertKelvin()"> Kelvin to fahrenheit</button>
+        <button type="button" onclick="convertFahrenheit()">fahrenheit to Kelvin</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
