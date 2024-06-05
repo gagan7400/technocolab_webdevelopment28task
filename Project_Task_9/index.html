@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1> Race Registration </h1>
+        <section>
+            <div>
+                <label for="RunnerName">RunnerName</label>
+                <input type="text" placeholder="please provide RunnerName" id="RunnerName"> <br>
+                <label for="Runner Age">Runner Age </label>
+                <input type="number" placeholder="please provide Runner Age" id="RunnerAge"> <br>
+                <label for="Earlylate">Early/Late </label>
+                <input type="text" placeholder="please provide Earlylate" id="Earlylate"> <br>
+            </div>
+        </section>
+        <button type="button" onclick="addrunner()"> RegisterRunner </button>
+    </div>
+    <div id="data">
+        <table border="1" cellpadding="20px" width="50%" style="margin:10px auto;border-collapse: collapse;">
+            <tr>
+                <th>Sno</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Time</th>
+                <th>Token</th>
+            </tr>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
